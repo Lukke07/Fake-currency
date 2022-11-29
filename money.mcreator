@@ -1,0 +1,104 @@
+{
+  "mod_elements": [
+    {
+      "name": "Umfake",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "umfake"
+    },
+    {
+      "name": "Fake",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fake"
+    },
+    {
+      "name": "Moedafake",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moedafake"
+    },
+    {
+      "name": "Doisfake",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "doisfake"
+    },
+    {
+      "name": "Cincofake",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cincofake"
+    },
+    {
+      "name": "Dezfake",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dezfake"
+    },
+    {
+      "name": "Vintefake",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vintefake"
+    },
+    {
+      "name": "Cinquentafake",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinquentafake"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.money.doisfake": "Doisfake",
+      "item.money.umfake": "Umfake",
+      "item.money.cinquentafake": "Cinquentafake",
+      "item.money.moedafake": "Moedafake",
+      "item.money.dezfake": "Dezfake",
+      "item.money.cincofake": "Cincofake",
+      "itemGroup.tabfake": "Fake",
+      "item.money.vintefake": "Vintefake"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "money",
+    "modName": "money",
+    "version": "1.0.0",
+    "author": "gedu2, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "net.mcreator.money",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200234517
+}
