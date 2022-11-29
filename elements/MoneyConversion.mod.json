@@ -2,7 +2,7 @@
   "_fv": 33,
   "_type": "gui",
   "definition": {
-    "type": 0,
+    "type": 1,
     "width": 176,
     "height": 166,
     "inventoryOffsetX": 0,
@@ -19,10 +19,220 @@
           "x": 141,
           "y": 49
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "megaslot.png",
+          "use1Xscale": false,
+          "name": "megaslot.png",
+          "x": 155,
+          "y": 107
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "slot.png",
+          "use1Xscale": false,
+          "name": "slot.png",
+          "x": 209,
+          "y": 85
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "slot.png",
+          "use1Xscale": false,
+          "name": "slot.png",
+          "x": 209,
+          "y": 112
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "slot.png",
+          "use1Xscale": false,
+          "name": "slot.png",
+          "x": 209,
+          "y": 139
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "slot.png",
+          "use1Xscale": false,
+          "name": "slot.png",
+          "x": 209,
+          "y": 166
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "slot.png",
+          "use1Xscale": false,
+          "name": "slot.png",
+          "x": 209,
+          "y": 58
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "umfake.png",
+          "use1Xscale": false,
+          "name": "umfake.png",
+          "x": 191,
+          "y": 58
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "doisfake.png",
+          "use1Xscale": false,
+          "name": "doisfake.png",
+          "x": 191,
+          "y": 85
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cinco_fake.png",
+          "use1Xscale": false,
+          "name": "cinco_fake.png",
+          "x": 191,
+          "y": 112
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "10fake.png",
+          "use1Xscale": false,
+          "name": "10fake.png",
+          "x": 191,
+          "y": 139
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "20_fake.png",
+          "use1Xscale": false,
+          "name": "20_fake.png",
+          "x": 191,
+          "y": 166
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "slot.png",
+          "use1Xscale": false,
+          "name": "slot.png",
+          "x": 249,
+          "y": 58
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "50fake.png",
+          "use1Xscale": false,
+          "name": "50fake.png",
+          "x": 231,
+          "y": 58
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 159,
+          "y": 112
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 209,
+          "y": 58
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 209,
+          "y": 85
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #3",
+          "x": 209,
+          "y": 112
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #4",
+          "x": 209,
+          "y": 139
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 5,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #5",
+          "x": 209,
+          "y": 166
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 6,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #6",
+          "x": 249,
+          "y": 58
+        }
       }
     ],
     "gridSettings": {
-      "sx": 18,
+      "sx": 9,
       "sy": 9,
       "ox": 11,
       "oy": 15,

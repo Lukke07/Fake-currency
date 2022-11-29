@@ -51,6 +51,45 @@ public class MoneyConversionGuiWindow extends ContainerScreen<MoneyConversionGui
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("money:textures/screens/faketemplate144.png"));
 		this.blit(ms, this.guiLeft + 15, this.guiTop + 12, 0, 0, 144, 144, 144, 144);
 
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("money:textures/screens/megaslot.png"));
+		this.blit(ms, this.guiLeft + 29, this.guiTop + 70, 0, 0, 27, 27, 27, 27);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("money:textures/screens/slot.png"));
+		this.blit(ms, this.guiLeft + 83, this.guiTop + 48, 0, 0, 18, 18, 18, 18);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("money:textures/screens/slot.png"));
+		this.blit(ms, this.guiLeft + 83, this.guiTop + 75, 0, 0, 18, 18, 18, 18);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("money:textures/screens/slot.png"));
+		this.blit(ms, this.guiLeft + 83, this.guiTop + 102, 0, 0, 18, 18, 18, 18);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("money:textures/screens/slot.png"));
+		this.blit(ms, this.guiLeft + 83, this.guiTop + 129, 0, 0, 18, 18, 18, 18);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("money:textures/screens/slot.png"));
+		this.blit(ms, this.guiLeft + 83, this.guiTop + 21, 0, 0, 18, 18, 18, 18);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("money:textures/screens/umfake.png"));
+		this.blit(ms, this.guiLeft + 65, this.guiTop + 21, 0, 0, 16, 16, 16, 16);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("money:textures/screens/doisfake.png"));
+		this.blit(ms, this.guiLeft + 65, this.guiTop + 48, 0, 0, 16, 16, 16, 16);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("money:textures/screens/cinco_fake.png"));
+		this.blit(ms, this.guiLeft + 65, this.guiTop + 75, 0, 0, 16, 16, 16, 16);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("money:textures/screens/10fake.png"));
+		this.blit(ms, this.guiLeft + 65, this.guiTop + 102, 0, 0, 16, 16, 16, 16);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("money:textures/screens/20_fake.png"));
+		this.blit(ms, this.guiLeft + 65, this.guiTop + 129, 0, 0, 16, 16, 16, 16);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("money:textures/screens/slot.png"));
+		this.blit(ms, this.guiLeft + 123, this.guiTop + 21, 0, 0, 18, 18, 18, 18);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("money:textures/screens/50fake.png"));
+		this.blit(ms, this.guiLeft + 105, this.guiTop + 21, 0, 0, 16, 16, 16, 16);
+
 		RenderSystem.disableBlend();
 	}
 
