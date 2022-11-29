@@ -6,7 +6,8 @@
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "umfake"
+      "registry_name": "umfake",
+      "path": "~/Coins"
     },
     {
       "name": "Fake",
@@ -30,7 +31,8 @@
       "sortid": 4,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "doisfake"
+      "registry_name": "doisfake",
+      "path": "~/Coins"
     },
     {
       "name": "Cincofake",
@@ -38,7 +40,8 @@
       "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cincofake"
+      "registry_name": "cincofake",
+      "path": "~/Coins"
     },
     {
       "name": "Dezfake",
@@ -46,7 +49,8 @@
       "sortid": 6,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dezfake"
+      "registry_name": "dezfake",
+      "path": "~/Coins"
     },
     {
       "name": "Vintefake",
@@ -54,7 +58,8 @@
       "sortid": 7,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "vintefake"
+      "registry_name": "vintefake",
+      "path": "~/Coins"
     },
     {
       "name": "Cinquentafake",
@@ -62,7 +67,16 @@
       "sortid": 8,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cinquentafake"
+      "registry_name": "cinquentafake",
+      "path": "~/Coins"
+    },
+    {
+      "name": "MoneyConversion",
+      "type": "gui",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "money_conversion"
     }
   ],
   "variable_elements": [],
@@ -81,7 +95,12 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Coins",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "money",
