@@ -90,6 +90,9 @@ public class MoneyConversionGuiWindow extends ContainerScreen<MoneyConversionGui
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("money:textures/screens/50fake.png"));
 		this.blit(ms, this.guiLeft + 105, this.guiTop + 21, 0, 0, 16, 16, 16, 16);
 
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("money:textures/screens/moedinha.png"));
+		this.blit(ms, this.guiLeft + 33, this.guiTop + 48, 0, 0, 16, 16, 16, 16);
+
 		RenderSystem.disableBlend();
 	}
 
