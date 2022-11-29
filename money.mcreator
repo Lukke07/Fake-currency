@@ -77,6 +77,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "money_conversion"
+    },
+    {
+      "name": "Maquinadecartao",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maquinadecartao"
     }
   ],
   "variable_elements": [],
@@ -89,6 +97,7 @@
       "item.money.moedafake": "Moedafake",
       "item.money.dezfake": "Dezfake",
       "item.money.cincofake": "Cincofake",
+      "item.money.maquinadecartao": "Maquinadecartao",
       "itemGroup.tabfake": "Fake",
       "item.money.vintefake": "Vintefake"
     }
