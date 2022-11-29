@@ -236,7 +236,7 @@
       "sy": 9,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }
