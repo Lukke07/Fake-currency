@@ -1,0 +1,21 @@
+{
+  "parent": "money:custom/maquina_de_cartao_2",
+  "textures": {
+    "all": "money:blocks/um",
+    "particle": "money:blocks/um",
+    "11": "money:blocks/onze",
+    "12": "money:blocks/doze",
+    "13": "money:blocks/treze",
+    "14": "money:blocks/quatorze",
+    "1": "money:blocks/um",
+    "2": "money:blocks/dois",
+    "3": "money:blocks/tres",
+    "4": "money:blocks/quatro",
+    "5": "money:blocks/cinco",
+    "6": "money:blocks/seis",
+    "7": "money:blocks/sete",
+    "8": "money:blocks/oito",
+    "9": "money:blocks/nove",
+    "10": "money:blocks/dez"
+  }
+}

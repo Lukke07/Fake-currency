@@ -115,12 +115,12 @@
       "path": "~/card"
     },
     {
-      "name": "Maquinadecartao",
-      "type": "item",
-      "sortid": 14,
+      "name": "Maquina",
+      "type": "block",
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "maquinadecartao"
+      "registry_name": "maquina"
     }
   ],
   "variable_elements": [],
@@ -130,9 +130,9 @@
       "item.money.t_xblackcard": "T Xblackcard",
       "item.money.t_xpinkcard": "T Xpinkcard",
       "item.money.doisfake": "Doisfake",
+      "block.money.maquina": "Maquina",
       "item.money.dezfake": "Dezfake",
       "item.money.cincofake": "Cincofake",
-      "item.money.maquinadecartao": "Maquinadecartao",
       "itemGroup.tabfake": "Fake",
       "item.money.vintefake": "Vintefake",
       "item.money.umfake": "Umfake",
