@@ -7,6 +7,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.IBlockReader;
+import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.shapes.ISelectionContext;
@@ -29,12 +30,12 @@ import java.util.List;
 import java.util.Collections;
 
 @MoneyModElements.ModElement.Tag
-public class MaquinaBlock extends MoneyModElements.ModElement {
-	@ObjectHolder("money:maquina")
+public class ATMBlock extends MoneyModElements.ModElement {
+	@ObjectHolder("money:atm")
 	public static final Block block = null;
 
-	public MaquinaBlock(MoneyModElements instance) {
-		super(instance, 15);
+	public ATMBlock(MoneyModElements instance) {
+		super(instance, 16);
 	}
 
 	@Override
@@ -51,9 +52,9 @@ public class MaquinaBlock extends MoneyModElements.ModElement {
 
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).notSolid()
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).notSolid()
 					.setOpaque((bs, br, bp) -> false));
-			setRegistryName("maquina");
+			setRegistryName("atm");
 		}
 
 		@Override
@@ -68,7 +69,12 @@ public class MaquinaBlock extends MoneyModElements.ModElement {
 
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
-			return VoxelShapes.empty();
+			Vector3d offset = state.getOffset(world, pos);
+			return VoxelShapes
+					.or(makeCuboidShape(0, 0, 0, 16, 4, 16), makeCuboidShape(0, 15, 0, 16, 11, 16), makeCuboidShape(0, 4, 0, 2, 16, 11),
+							makeCuboidShape(14, 4, 0, 16, 16, 11), makeCuboidShape(0, 4, 11, 16, 14, 16))
+
+					.withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override

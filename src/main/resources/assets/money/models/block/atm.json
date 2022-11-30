@@ -1,0 +1,24 @@
+{
+  "parent": "money:custom/atm",
+  "textures": {
+    "all": "money:blocks/um_a",
+    "particle": "money:blocks/um_a",
+    "11": "money:blocks/onze_a",
+    "12": "money:blocks/treze_a",
+    "13": "money:blocks/quatorze_a",
+    "14": "money:blocks/quinze",
+    "15": "money:blocks/dezeceis",
+    "16": "money:blocks/dezesete",
+    "17": "money:blocks/dezoito",
+    "1": "money:blocks/um_a",
+    "2": "money:blocks/dois_a",
+    "3": "money:blocks/quatro_a",
+    "4": "money:blocks/quatro_a",
+    "5": "money:blocks/cinco_a",
+    "6": "money:blocks/seis_a",
+    "7": "money:blocks/sete_a",
+    "8": "money:blocks/oito_a",
+    "9": "money:blocks/nove_a",
+    "10": "money:blocks/dez_a"
+  }
+}

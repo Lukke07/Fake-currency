@@ -2,19 +2,19 @@
   "_fv": 33,
   "_type": "block",
   "definition": {
-    "texture": "um",
+    "texture": "um_a",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "maquina_de_cartao_2:default",
+    "customModelName": "atm:default",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "maquininha",
+    "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
@@ -24,16 +24,52 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 6.0,
+        "mx": 0.0,
         "my": 0.0,
-        "mz": 5.0,
-        "Mx": 6.0,
-        "My": 1.0,
-        "Mz": 5.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 4.0,
+        "Mz": 16.0,
+        "subtract": false
+      },
+      {
+        "mx": 0.0,
+        "my": 15.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 11.0,
+        "Mz": 16.0,
+        "subtract": false
+      },
+      {
+        "mx": 0.0,
+        "my": 4.0,
+        "mz": 0.0,
+        "Mx": 2.0,
+        "My": 16.0,
+        "Mz": 11.0,
+        "subtract": false
+      },
+      {
+        "mx": 14.0,
+        "my": 4.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 16.0,
+        "Mz": 11.0,
+        "subtract": false
+      },
+      {
+        "mx": 0.0,
+        "my": 4.0,
+        "mz": 11.0,
+        "Mx": 16.0,
+        "My": 14.0,
+        "Mz": 16.0,
         "subtract": false
       }
     ],
-    "name": "Maquina",
+    "name": "ATM",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -79,7 +115,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "GROUND"
     },
     "breakSound": {
       "value": ""
