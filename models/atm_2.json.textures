@@ -1,0 +1,26 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "11": "onze_a",
+        "12": "treze_a",
+        "13": "quatorze_a",
+        "14": "quinze",
+        "15": "dezeceis",
+        "16": "dezesete",
+        "17": "dezoito",
+        "1": "um_a",
+        "2": "dois_a",
+        "3": "quatro_a",
+        "4": "quatro_a",
+        "5": "cinco_a",
+        "6": "seis_a",
+        "7": "sete_a",
+        "8": "oito_a",
+        "9": "nove_a",
+        "10": "dez_a"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -129,6 +129,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "atm"
+    },
+    {
+      "name": "Atmgui",
+      "type": "gui",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atmgui"
     }
   ],
   "variable_elements": [],

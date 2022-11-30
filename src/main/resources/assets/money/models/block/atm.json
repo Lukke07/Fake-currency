@@ -1,5 +1,5 @@
 {
-  "parent": "money:custom/atm",
+  "parent": "money:custom/atm_2",
   "textures": {
     "all": "money:blocks/um_a",
     "particle": "money:blocks/um_a",
