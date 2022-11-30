@@ -1,11 +1,15 @@
 {
+  "item.money.t_xblackcard": "T Xblackcard",
+  "item.money.t_xpinkcard": "T Xpinkcard",
   "item.money.doisfake": "Doisfake",
-  "item.money.umfake": "Umfake",
-  "item.money.cinquentafake": "Cinquentafake",
-  "item.money.moedafake": "Moedafake",
   "item.money.dezfake": "Dezfake",
   "item.money.cincofake": "Cincofake",
   "item.money.maquinadecartao": "Maquinadecartao",
   "itemGroup.tabfake": "Fake",
-  "item.money.vintefake": "Vintefake"
+  "item.money.vintefake": "Vintefake",
+  "item.money.umfake": "Umfake",
+  "item.money.cinquentafake": "Cinquentafake",
+  "item.money.b_fcard": "B Fcard",
+  "item.money.moedafake": "Moedafake",
+  "item.money.t_xredcard": "T Xredcard"
 }

@@ -12,12 +12,12 @@ import net.mcreator.money.itemgroup.FakeItemGroup;
 import net.mcreator.money.MoneyModElements;
 
 @MoneyModElements.ModElement.Tag
-public class MaquinadecartaoItem extends MoneyModElements.ModElement {
-	@ObjectHolder("money:maquinadecartao")
+public class TXpinkcardItem extends MoneyModElements.ModElement {
+	@ObjectHolder("money:t_xpinkcard")
 	public static final Item block = null;
 
-	public MaquinadecartaoItem(MoneyModElements instance) {
-		super(instance, 14);
+	public TXpinkcardItem(MoneyModElements instance) {
+		super(instance, 11);
 	}
 
 	@Override
@@ -27,8 +27,8 @@ public class MaquinadecartaoItem extends MoneyModElements.ModElement {
 
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(FakeItemGroup.tab).maxStackSize(64).rarity(Rarity.EPIC));
-			setRegistryName("maquinadecartao");
+			super(new Item.Properties().group(FakeItemGroup.tab).maxStackSize(64).rarity(Rarity.RARE));
+			setRegistryName("t_xpinkcard");
 		}
 
 		@Override
