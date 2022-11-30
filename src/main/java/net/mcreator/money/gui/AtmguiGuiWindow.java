@@ -60,7 +60,7 @@ public class AtmguiGuiWindow extends ContainerScreen<AtmguiGui.GuiContainerMod> 
 		this.blit(ms, this.guiLeft + 60, this.guiTop + 7, 0, 0, 16, 16, 16, 16);
 
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("money:textures/screens/megaslot.png"));
-		this.blit(ms, this.guiLeft + 6, this.guiTop + 34, 0, 0, 27, 27, 27, 27);
+		this.blit(ms, this.guiLeft + 11, this.guiTop + 34, 0, 0, 27, 27, 27, 27);
 
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("money:textures/screens/doisfake.png"));
 		this.blit(ms, this.guiLeft + 60, this.guiTop + 34, 0, 0, 16, 16, 16, 16);
@@ -78,7 +78,10 @@ public class AtmguiGuiWindow extends ContainerScreen<AtmguiGui.GuiContainerMod> 
 		this.blit(ms, this.guiLeft + 110, this.guiTop + 61, 0, 0, 16, 16, 16, 16);
 
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("money:textures/screens/seta.png"));
-		this.blit(ms, this.guiLeft + 11, this.guiTop + 16, 0, 0, 16, 16, 16, 16);
+		this.blit(ms, this.guiLeft + 15, this.guiTop + 16, 0, 0, 16, 16, 16, 16);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("money:textures/screens/moedinha.png"));
+		this.blit(ms, this.guiLeft + 155, this.guiTop + 66, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();
 	}
@@ -101,7 +104,7 @@ public class AtmguiGuiWindow extends ContainerScreen<AtmguiGui.GuiContainerMod> 
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
 		this.font.drawString(ms, "Dinheiro:", 6, 61, -12829636);
 		this.font.drawString(ms, "ATM", 2, 3, -12829636);
-		this.font.drawString(ms, "Card", 11, 12, -12829636);
+		this.font.drawString(ms, "Card", 15, 12, -12829636);
 		this.font.drawString(ms, "" + (new Object() {
 			public double getValue(BlockPos pos, String tag) {
 				TileEntity tileEntity = world.getTileEntity(pos);
@@ -109,7 +112,7 @@ public class AtmguiGuiWindow extends ContainerScreen<AtmguiGui.GuiContainerMod> 
 					return tileEntity.getTileData().getDouble(tag);
 				return 0;
 			}
-		}.getValue(new BlockPos((int) x, (int) y, (int) z), "money")) + "", 2, 70, -12829636);
+		}.getValue(new BlockPos((int) x, (int) y, (int) z), "money")) + "", 6, 70, -12829636);
 	}
 
 	@Override

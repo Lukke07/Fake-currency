@@ -1,0 +1,67 @@
+{
+  "_fv": 33,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "fakeimage.png",
+          "use1Xscale": false,
+          "name": "fakeimage.png",
+          "x": 6,
+          "y": 18
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "moedinha.png",
+          "use1Xscale": true,
+          "name": "moedinha.png",
+          "x": 10,
+          "y": 22
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "User:<ENBT:text:tagName>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "User:<ENBT:text:tagName>",
+          "x": 24,
+          "y": 17
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Money:<ENBT:number:tagName>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Money:<ENBT:number:tagName>",
+          "x": 24,
+          "y": 26
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "UserMoneyDisplayOverlayIngame"
+    },
+    "gridSettings": {
+      "sx": 9,
+      "sy": 9,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -118,7 +118,7 @@ public class AtmguiGui extends MoneyModElements.ModElement {
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 12, 40) {
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 16, 40) {
 			}));
 			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 82, 61) {
 				@Override

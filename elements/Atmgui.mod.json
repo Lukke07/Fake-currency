@@ -20,7 +20,7 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #0",
-          "x": 137,
+          "x": 141,
           "y": 76
         }
       },
@@ -132,7 +132,7 @@
           "image": "megaslot.png",
           "use1Xscale": false,
           "name": "megaslot.png",
-          "x": 132,
+          "x": 137,
           "y": 71
         }
       },
@@ -192,7 +192,7 @@
           "image": "seta.png",
           "use1Xscale": false,
           "name": "seta.png",
-          "x": 137,
+          "x": 141,
           "y": 53
         }
       },
@@ -205,7 +205,7 @@
             "falpha": 0.0
           },
           "name": "Card",
-          "x": 137,
+          "x": 141,
           "y": 49
         }
       },
@@ -218,8 +218,18 @@
             "falpha": 0.0
           },
           "name": "<BNBT:number:money>",
-          "x": 128,
+          "x": 132,
           "y": 107
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "moedinha.png",
+          "use1Xscale": false,
+          "name": "moedinha.png",
+          "x": 281,
+          "y": 103
         }
       }
     ],

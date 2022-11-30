@@ -120,7 +120,8 @@
       "sortid": 15,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "maquina"
+      "registry_name": "maquina",
+      "path": "~/Blocos"
     },
     {
       "name": "ATM",
@@ -128,7 +129,8 @@
       "sortid": 16,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "atm"
+      "registry_name": "atm",
+      "path": "~/Blocos/Atm"
     },
     {
       "name": "Atmgui",
@@ -136,7 +138,8 @@
       "sortid": 17,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "atmgui"
+      "registry_name": "atmgui",
+      "path": "~/Blocos/Atm"
     },
     {
       "name": "BlankCard",
@@ -145,15 +148,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "blank_card",
-      "path": "~/card/BlankCard"
-    },
-    {
-      "name": "Cardchoose",
-      "type": "command",
-      "sortid": 19,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cardchoose",
       "path": "~/card/BlankCard"
     },
     {
@@ -232,6 +226,101 @@
         ]
       },
       "path": "~/card/BlankCard"
+    },
+    {
+      "name": "UserMoneyDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "user_money_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/card"
+    },
+    {
+      "name": "UserMoney",
+      "type": "overlay",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "user_money",
+      "path": "~/card"
+    },
+    {
+      "name": "CardRightClick",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "card_right_click",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/card"
+    },
+    {
+      "name": "CardOnPlayerStoppedusing",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "card_on_player_stoppedusing",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/card"
+    },
+    {
+      "name": "CardItemInHandTick",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "card_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/card"
+    },
+    {
+      "name": "NewAtmGui",
+      "type": "gui",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "new_atm_gui",
+      "path": "~/Blocos/Atm"
     }
   ],
   "variable_elements": [],
@@ -267,6 +356,15 @@
         "children": [
           {
             "name": "BlankCard",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Blocos",
+        "children": [
+          {
+            "name": "Atm",
             "children": []
           }
         ]

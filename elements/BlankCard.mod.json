@@ -2,9 +2,9 @@
   "_fv": 33,
   "_type": "item",
   "definition": {
-    "renderType": 1,
+    "renderType": 0,
     "texture": "blankcard",
-    "customModelName": "blank_card:default",
+    "customModelName": "Normal",
     "name": "Blank Card",
     "rarity": "COMMON",
     "creativeTab": {

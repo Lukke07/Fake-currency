@@ -21,25 +21,22 @@ public class BFCProcedure {
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if (4 == entity.getPersistentData().getDouble("card")) {
-			if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-					.getItem() == BlankCardItem.block) {
-				if (entity instanceof LivingEntity) {
-					ItemStack _setstack = new ItemStack(BFcardItem.block);
-					_setstack.setCount((int) 1);
-					((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
-					if (entity instanceof ServerPlayerEntity)
-						((ServerPlayerEntity) entity).inventory.markDirty();
-				}
-			} else if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY)
-					.getItem() == BlankCardItem.block) {
-				if (entity instanceof LivingEntity) {
-					ItemStack _setstack = new ItemStack(BFcardItem.block);
-					_setstack.setCount((int) 1);
-					((LivingEntity) entity).setHeldItem(Hand.OFF_HAND, _setstack);
-					if (entity instanceof ServerPlayerEntity)
-						((ServerPlayerEntity) entity).inventory.markDirty();
-				}
+		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == BlankCardItem.block) {
+			if (entity instanceof LivingEntity) {
+				ItemStack _setstack = new ItemStack(BFcardItem.block);
+				_setstack.setCount((int) 1);
+				((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
+				if (entity instanceof ServerPlayerEntity)
+					((ServerPlayerEntity) entity).inventory.markDirty();
+			}
+		} else if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY)
+				.getItem() == BlankCardItem.block) {
+			if (entity instanceof LivingEntity) {
+				ItemStack _setstack = new ItemStack(BFcardItem.block);
+				_setstack.setCount((int) 1);
+				((LivingEntity) entity).setHeldItem(Hand.OFF_HAND, _setstack);
+				if (entity instanceof ServerPlayerEntity)
+					((ServerPlayerEntity) entity).inventory.markDirty();
 			}
 		}
 	}

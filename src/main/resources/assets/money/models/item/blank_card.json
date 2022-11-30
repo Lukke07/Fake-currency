@@ -1,7 +1,6 @@
 {
-  "parent": "money:custom/blank_card",
+  "parent": "item/generated",
   "textures": {
-    "0": "money:blocks/",
-    "particle": "money:items/blankcard"
+    "layer0": "money:items/blankcard"
   }
 }
