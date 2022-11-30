@@ -20,8 +20,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #0",
-          "x": 149,
-          "y": 70
+          "x": 137,
+          "y": 76
         }
       },
       {
@@ -64,8 +64,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #4",
-          "x": 235,
-          "y": 96
+          "x": 258,
+          "y": 98
         }
       },
       {
@@ -75,8 +75,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #5",
-          "x": 235,
-          "y": 70
+          "x": 258,
+          "y": 71
         }
       },
       {
@@ -86,17 +86,149 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #6",
-          "x": 235,
+          "x": 258,
           "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "umfake.png",
+          "use1Xscale": false,
+          "name": "umfake.png",
+          "x": 186,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Dinheiro:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Dinheiro:",
+          "x": 132,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "ATM",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "ATM",
+          "x": 128,
+          "y": 40
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "megaslot.png",
+          "use1Xscale": false,
+          "name": "megaslot.png",
+          "x": 132,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "doisfake.png",
+          "use1Xscale": false,
+          "name": "doisfake.png",
+          "x": 186,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cinco_fake.png",
+          "use1Xscale": false,
+          "name": "cinco_fake.png",
+          "x": 186,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "10fake.png",
+          "use1Xscale": false,
+          "name": "10fake.png",
+          "x": 236,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "20_fake.png",
+          "use1Xscale": false,
+          "name": "20_fake.png",
+          "x": 236,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "50fake.png",
+          "use1Xscale": false,
+          "name": "50fake.png",
+          "x": 236,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "seta.png",
+          "use1Xscale": false,
+          "name": "seta.png",
+          "x": 137,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Card",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Card",
+          "x": 137,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<BNBT:number:money>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<BNBT:number:money>",
+          "x": 128,
+          "y": 107
         }
       }
     ],
     "gridSettings": {
-      "sx": 18,
-      "sy": 18,
+      "sx": 9,
+      "sy": 9,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }

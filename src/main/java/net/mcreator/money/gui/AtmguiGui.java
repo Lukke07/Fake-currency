@@ -118,7 +118,7 @@ public class AtmguiGui extends MoneyModElements.ModElement {
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 24, 34) {
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 12, 40) {
 			}));
 			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 82, 61) {
 				@Override
@@ -138,19 +138,19 @@ public class AtmguiGui extends MoneyModElements.ModElement {
 					return false;
 				}
 			}));
-			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 110, 60) {
+			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 133, 62) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 110, 34) {
+			this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 133, 35) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 110, 8) {
+			this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 133, 8) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;

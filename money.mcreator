@@ -137,6 +137,101 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "atmgui"
+    },
+    {
+      "name": "BlankCard",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blank_card",
+      "path": "~/card/BlankCard"
+    },
+    {
+      "name": "Cardchoose",
+      "type": "command",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cardchoose",
+      "path": "~/card/BlankCard"
+    },
+    {
+      "name": "BlankCardGui",
+      "type": "gui",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blank_card_gui",
+      "path": "~/card/BlankCard"
+    },
+    {
+      "name": "Txred",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "txred",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/card/BlankCard"
+    },
+    {
+      "name": "TXblack",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "t_xblack",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/card/BlankCard"
+    },
+    {
+      "name": "TXPink",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tx_pink",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/card/BlankCard"
+    },
+    {
+      "name": "BFC",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bfc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/card/BlankCard"
     }
   ],
   "variable_elements": [],
@@ -152,6 +247,7 @@
       "block.money.atm": "ATM",
       "itemGroup.tabfake": "Fake",
       "item.money.vintefake": "Vintefake",
+      "item.money.blank_card": "Blank Card",
       "item.money.umfake": "Umfake",
       "item.money.cinquentafake": "Cinquentafake",
       "item.money.b_fcard": "B Fcard",
@@ -168,7 +264,12 @@
       },
       {
         "name": "card",
-        "children": []
+        "children": [
+          {
+            "name": "BlankCard",
+            "children": []
+          }
+        ]
       }
     ]
   },
