@@ -10,7 +10,7 @@
     "textureBack": "",
     "renderType": 2,
     "customModelName": "atm:default",
-    "rotationMode": 0,
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -28,43 +28,7 @@
         "my": 0.0,
         "mz": 0.0,
         "Mx": 16.0,
-        "My": 4.0,
-        "Mz": 16.0,
-        "subtract": false
-      },
-      {
-        "mx": 0.0,
-        "my": 15.0,
-        "mz": 0.0,
-        "Mx": 16.0,
-        "My": 11.0,
-        "Mz": 16.0,
-        "subtract": false
-      },
-      {
-        "mx": 0.0,
-        "my": 4.0,
-        "mz": 0.0,
-        "Mx": 2.0,
         "My": 16.0,
-        "Mz": 11.0,
-        "subtract": false
-      },
-      {
-        "mx": 14.0,
-        "my": 4.0,
-        "mz": 0.0,
-        "Mx": 16.0,
-        "My": 16.0,
-        "Mz": 11.0,
-        "subtract": false
-      },
-      {
-        "mx": 0.0,
-        "my": 4.0,
-        "mz": 11.0,
-        "Mx": 16.0,
-        "My": 14.0,
         "Mz": 16.0,
         "subtract": false
       }
@@ -115,7 +79,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "METAL"
     },
     "breakSound": {
       "value": ""

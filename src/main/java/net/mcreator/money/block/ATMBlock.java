@@ -7,19 +7,22 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.IBlockReader;
-import net.minecraft.util.math.vector.Vector3d;
-import net.minecraft.util.math.shapes.VoxelShapes;
-import net.minecraft.util.math.shapes.VoxelShape;
-import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Rotation;
+import net.minecraft.util.Mirror;
+import net.minecraft.util.Direction;
+import net.minecraft.state.StateContainer;
+import net.minecraft.state.DirectionProperty;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
+import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -51,9 +54,12 @@ public class ATMBlock extends MoneyModElements.ModElement {
 	}
 
 	public static class CustomBlock extends Block {
+		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
+
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).notSolid()
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).notSolid()
 					.setOpaque((bs, br, bp) -> false));
+			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
 			setRegistryName("atm");
 		}
 
@@ -68,13 +74,21 @@ public class ATMBlock extends MoneyModElements.ModElement {
 		}
 
 		@Override
-		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
-			Vector3d offset = state.getOffset(world, pos);
-			return VoxelShapes
-					.or(makeCuboidShape(0, 0, 0, 16, 4, 16), makeCuboidShape(0, 15, 0, 16, 11, 16), makeCuboidShape(0, 4, 0, 2, 16, 11),
-							makeCuboidShape(14, 4, 0, 16, 16, 11), makeCuboidShape(0, 4, 11, 16, 14, 16))
+		protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
+			builder.add(FACING);
+		}
 
-					.withOffset(offset.x, offset.y, offset.z);
+		@Override
+		public BlockState getStateForPlacement(BlockItemUseContext context) {
+			return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite());
+		}
+
+		public BlockState rotate(BlockState state, Rotation rot) {
+			return state.with(FACING, rot.rotate(state.get(FACING)));
+		}
+
+		public BlockState mirror(BlockState state, Mirror mirrorIn) {
+			return state.rotate(mirrorIn.toRotation(state.get(FACING)));
 		}
 
 		@Override
