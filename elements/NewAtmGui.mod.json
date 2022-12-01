@@ -8,7 +8,7 @@
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
-    "doesPauseGame": true,
+    "doesPauseGame": false,
     "components": [
       {
         "type": "label",
@@ -60,6 +60,9 @@
         "type": "checkbox",
         "data": {
           "text": "",
+          "isCheckedProcedure": {
+            "name": "UserMoneyDisplayOverlayIngame"
+          },
           "name": "Comprovante",
           "x": 176,
           "y": 98
@@ -154,6 +157,9 @@
         "type": "button",
         "data": {
           "text": "1",
+          "onClick": {
+            "name": "Umfakee"
+          },
           "width": 30,
           "height": 20,
           "name": "1",
@@ -165,6 +171,9 @@
         "type": "button",
         "data": {
           "text": "2",
+          "onClick": {
+            "name": "DoisFakee"
+          },
           "width": 30,
           "height": 20,
           "name": "2",
@@ -176,6 +185,9 @@
         "type": "button",
         "data": {
           "text": "5",
+          "onClick": {
+            "name": "CincoFakee"
+          },
           "width": 30,
           "height": 20,
           "name": "5",
@@ -187,6 +199,9 @@
         "type": "button",
         "data": {
           "text": "10",
+          "onClick": {
+            "name": "DezFakee"
+          },
           "width": 35,
           "height": 20,
           "name": "10",
@@ -198,6 +213,9 @@
         "type": "button",
         "data": {
           "text": "20",
+          "onClick": {
+            "name": "VinteFakees"
+          },
           "width": 35,
           "height": 20,
           "name": "20",
@@ -209,6 +227,9 @@
         "type": "button",
         "data": {
           "text": "50",
+          "onClick": {
+            "name": "CinquentaFakee"
+          },
           "width": 35,
           "height": 20,
           "name": "50",

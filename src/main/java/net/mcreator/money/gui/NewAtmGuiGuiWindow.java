@@ -15,9 +15,13 @@ import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.money.procedures.UserMoneyDisplayOverlayIngameProcedure;
 import net.mcreator.money.MoneyMod;
 
+import java.util.stream.Stream;
+import java.util.Map;
 import java.util.HashMap;
+import java.util.AbstractMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.matrix.MatrixStack;
@@ -39,11 +43,6 @@ public class NewAtmGuiGuiWindow extends ContainerScreen<NewAtmGuiGui.GuiContaine
 		this.entity = container.entity;
 		this.xSize = 176;
 		this.ySize = 166;
-	}
-
-	@Override
-	public boolean isPauseScreen() {
-		return true;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("money:textures/screens/new_atm_gui.png");
@@ -112,7 +111,10 @@ public class NewAtmGuiGuiWindow extends ContainerScreen<NewAtmGuiGui.GuiContaine
 	public void init(Minecraft minecraft, int width, int height) {
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
-		Comprovante = new CheckboxButton(this.guiLeft + 50, this.guiTop + 61, 20, 20, new StringTextComponent(""), false);
+		Comprovante = new CheckboxButton(this.guiLeft + 50, this.guiTop + 61, 20, 20, new StringTextComponent(""),
+
+				UserMoneyDisplayOverlayIngameProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll)));
 		NewAtmGuiGui.guistate.put("checkbox:Comprovante", Comprovante);
 		this.addButton(Comprovante);
 		this.addButton(new Button(this.guiLeft + 104, this.guiTop + 3, 30, 20, new StringTextComponent("1"), e -> {

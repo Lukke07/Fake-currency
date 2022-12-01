@@ -107,19 +107,14 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "hasInventory": true,
-    "guiBoundTo": "Atmgui",
+    "guiBoundTo": "NewAtmGui",
     "openGUIOnRightClick": true,
-    "inventorySize": 7,
-    "inventoryStackSize": 1,
-    "inventoryDropWhenDestroyed": false,
+    "inventorySize": 3,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": false,
     "inventoryOutSlotIDs": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
+      2
     ],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": false,
@@ -130,6 +125,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "Moneyadd"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
