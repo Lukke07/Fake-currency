@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "money:blocks/dois_a",
+    "particle": "money:blocks/dois_a"
+  }
+}

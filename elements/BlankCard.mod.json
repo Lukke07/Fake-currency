@@ -25,11 +25,10 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "Um cartão em branco",
-      "aperte com o botão direito para escolher"
+      "Um cartão em branco"
     ],
     "hasGlow": false,
-    "guiBoundTo": "BlankCardGui",
+    "guiBoundTo": "<NONE>",
     "inventorySize": 5,
     "inventoryStackSize": 1,
     "isFood": false,

@@ -1,0 +1,151 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 200,
+    "height": 83,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Selecione o seu cartão",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Selecione o seu cartão",
+          "x": 159,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carta_de_credito_bungas.png",
+          "use1Xscale": true,
+          "name": "carta_de_credito_bungas.png",
+          "x": 132,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carta_de_credito_bungas_fafas.png",
+          "use1Xscale": true,
+          "name": "carta_de_credito_bungas_fafas.png",
+          "x": 222,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "carta_de_credito_bungas_fafas_lalau.png",
+          "use1Xscale": true,
+          "name": "carta_de_credito_bungas_fafas_lalau.png",
+          "x": 132,
+          "y": 121
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "BfCard",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "BfCard",
+          "x": 222,
+          "y": 130
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Red",
+          "onClick": {
+            "name": "RedC"
+          },
+          "width": 40,
+          "height": 20,
+          "name": "Red",
+          "x": 168,
+          "y": 94
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Black",
+          "onClick": {
+            "name": "BlackC"
+          },
+          "width": 51,
+          "height": 20,
+          "name": "Black",
+          "x": 168,
+          "y": 125
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Pink",
+          "onClick": {
+            "name": "PinkC"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Pink",
+          "x": 258,
+          "y": 94
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "BF",
+          "onClick": {
+            "name": "BfC"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "BF",
+          "x": 258,
+          "y": 125
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Pular",
+          "onClick": {
+            "name": "PularProcedure"
+          },
+          "width": 51,
+          "height": 20,
+          "name": "Pular",
+          "x": 258,
+          "y": 60
+        }
+      }
+    ],
+    "onTick": {
+      "name": "SetadorWhileThisGUIIsOpenTick"
+    },
+    "gridSettings": {
+      "sx": 9,
+      "sy": 9,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

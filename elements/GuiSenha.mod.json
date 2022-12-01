@@ -1,0 +1,309 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 133,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "ATM",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "ATM",
+          "x": 128,
+          "y": 40
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "1",
+          "onClick": {
+            "name": "Sum"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "1",
+          "x": 186,
+          "y": 40
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Senha",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Senha",
+          "x": 150,
+          "y": 40
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "*",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Um"
+          },
+          "name": "*",
+          "x": 152,
+          "y": 50
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "*",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Dois"
+          },
+          "name": "*",
+          "x": 158,
+          "y": 50
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "*",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Tres"
+          },
+          "name": "*",
+          "x": 164,
+          "y": 50
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "*",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Quatro"
+          },
+          "name": "*",
+          "x": 170,
+          "y": 50
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "2",
+          "onClick": {
+            "name": "SDois"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "2",
+          "x": 216,
+          "y": 40
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "3",
+          "onClick": {
+            "name": "STres"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "3",
+          "x": 246,
+          "y": 40
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "4",
+          "onClick": {
+            "name": "Squatro"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "4",
+          "x": 186,
+          "y": 60
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "5",
+          "onClick": {
+            "name": "SCinco"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "5",
+          "x": 216,
+          "y": 60
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "6",
+          "onClick": {
+            "name": "SSeis"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "6",
+          "x": 246,
+          "y": 60
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "7",
+          "onClick": {
+            "name": "SSete"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "7",
+          "x": 186,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "8",
+          "onClick": {
+            "name": "SOito"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "8",
+          "x": 216,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "9",
+          "onClick": {
+            "name": "SNove"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "9",
+          "x": 246,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "0",
+          "onClick": {
+            "name": "SZero"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "0",
+          "x": 216,
+          "y": 100
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "|",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "|",
+          "x": 144,
+          "y": 40
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Cartão",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Cartão",
+          "x": 128,
+          "y": 68
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "OK",
+          "onClick": {
+            "name": "OkProcedure"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "OK",
+          "x": 246,
+          "y": 100
+        }
+      }
+    ],
+    "onClosed": {
+      "name": "GuiSenhaThisGUIIsClosed"
+    },
+    "gridSettings": {
+      "sx": 4,
+      "sy": 4,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

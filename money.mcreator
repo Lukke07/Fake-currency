@@ -133,39 +133,605 @@
       "path": "~/Blocos/Atm"
     },
     {
-      "name": "Atmgui",
-      "type": "gui",
-      "sortid": 17,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "atmgui",
-      "path": "~/Blocos/Atm"
-    },
-    {
       "name": "BlankCard",
       "type": "item",
       "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blank_card",
-      "path": "~/card/BlankCard"
+      "path": "~/card"
     },
     {
-      "name": "BlankCardGui",
+      "name": "PlayerLeaves",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_leaves",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Players"
+    },
+    {
+      "name": "PlayerJoins",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_joins",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Players"
+    },
+    {
+      "name": "RightClick",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "right_click",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/card"
+    },
+    {
+      "name": "InventoryTick",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/card"
+    },
+    {
+      "name": "Money",
+      "type": "overlay",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "money",
+      "path": "~/Players"
+    },
+    {
+      "name": "GuiSenha",
       "type": "gui",
-      "sortid": 20,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "blank_card_gui",
-      "path": "~/card/BlankCard"
+      "registry_name": "gui_senha",
+      "path": "~/Blocos/Atm"
     },
     {
-      "name": "Txred",
-      "type": "procedure",
-      "sortid": 21,
+      "name": "GuiMoney",
+      "type": "gui",
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "txred",
+      "registry_name": "gui_money",
+      "path": "~/Blocos/Atm"
+    },
+    {
+      "name": "Um",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "um",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocos/Atm/Asteriscos"
+    },
+    {
+      "name": "Dois",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dois",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocos/Atm/Asteriscos"
+    },
+    {
+      "name": "Tres",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tres",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocos/Atm/Asteriscos"
+    },
+    {
+      "name": "Quatro",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quatro",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocos/Atm/Asteriscos"
+    },
+    {
+      "name": "GuiSenhaThisGUIIsClosed",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_senha_this_gui_is_closed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocos/Atm"
+    },
+    {
+      "name": "Sum",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sum",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocos/Atm/Senha"
+    },
+    {
+      "name": "SNove",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_nove",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocos/Atm/Senha"
+    },
+    {
+      "name": "SOito",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_oito",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocos/Atm/Senha"
+    },
+    {
+      "name": "SDois",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_dois",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocos/Atm/Senha"
+    },
+    {
+      "name": "STres",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_tres",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocos/Atm/Senha"
+    },
+    {
+      "name": "Squatro",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "squatro",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocos/Atm/Senha"
+    },
+    {
+      "name": "SSeis",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_seis",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocos/Atm/Senha"
+    },
+    {
+      "name": "SCinco",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_cinco",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocos/Atm/Senha"
+    },
+    {
+      "name": "SSete",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_sete",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocos/Atm/Senha"
+    },
+    {
+      "name": "SZero",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_zero",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocos/Atm/Senha"
+    },
+    {
+      "name": "OkProcedure",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ok_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocos/Atm"
+    },
+    {
+      "name": "SetadordeCartao",
+      "type": "block",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setadorde_cartao",
+      "path": "~/Blocos/CardSetuper"
+    },
+    {
+      "name": "SetadorWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setador_while_this_gui_is_open_tick",
       "metadata": {
         "dependencies": [
           {
@@ -174,15 +740,15 @@
           }
         ]
       },
-      "path": "~/card/BlankCard"
+      "path": "~/Blocos/CardSetuper"
     },
     {
-      "name": "TXblack",
+      "name": "RedC",
       "type": "procedure",
-      "sortid": 22,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "t_xblack",
+      "registry_name": "red_c",
       "metadata": {
         "dependencies": [
           {
@@ -191,15 +757,15 @@
           }
         ]
       },
-      "path": "~/card/BlankCard"
+      "path": "~/Blocos/CardSetuper/Cards"
     },
     {
-      "name": "TXPink",
+      "name": "BlackC",
       "type": "procedure",
-      "sortid": 23,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tx_pink",
+      "registry_name": "black_c",
       "metadata": {
         "dependencies": [
           {
@@ -208,15 +774,15 @@
           }
         ]
       },
-      "path": "~/card/BlankCard"
+      "path": "~/Blocos/CardSetuper/Cards"
     },
     {
-      "name": "BFC",
+      "name": "PinkC",
       "type": "procedure",
-      "sortid": 24,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bfc",
+      "registry_name": "pink_c",
       "metadata": {
         "dependencies": [
           {
@@ -225,15 +791,253 @@
           }
         ]
       },
-      "path": "~/card/BlankCard"
+      "path": "~/Blocos/CardSetuper/Cards"
     },
     {
-      "name": "UserMoneyDisplayOverlayIngame",
+      "name": "BfC",
       "type": "procedure",
-      "sortid": 27,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "user_money_display_overlay_ingame",
+      "registry_name": "bf_c",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blocos/CardSetuper/Cards"
+    },
+    {
+      "name": "Setador",
+      "type": "gui",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setador",
+      "path": "~/Blocos/CardSetuper"
+    },
+    {
+      "name": "SetadorSenha",
+      "type": "gui",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setador_senha",
+      "path": "~/Blocos/CardSetuper"
+    },
+    {
+      "name": "UmS",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "um_s",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blocos/CardSetuper/ColocarSenha"
+    },
+    {
+      "name": "ZeroS",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zero_s",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blocos/CardSetuper/ColocarSenha"
+    },
+    {
+      "name": "DoisS",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dois_s",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blocos/CardSetuper/ColocarSenha"
+    },
+    {
+      "name": "TresS",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tres_s",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blocos/CardSetuper/ColocarSenha"
+    },
+    {
+      "name": "QuatroS",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quatro_s",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blocos/CardSetuper/ColocarSenha"
+    },
+    {
+      "name": "CincoS",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinco_s",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blocos/CardSetuper/ColocarSenha"
+    },
+    {
+      "name": "SeisS",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seis_s",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blocos/CardSetuper/ColocarSenha"
+    },
+    {
+      "name": "SeteS",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sete_s",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blocos/CardSetuper/ColocarSenha"
+    },
+    {
+      "name": "OitoS",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oito_s",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blocos/CardSetuper/ColocarSenha"
+    },
+    {
+      "name": "NoveS",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nove_s",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blocos/CardSetuper/ColocarSenha"
+    },
+    {
+      "name": "PularProcedure",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pular_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocos/CardSetuper"
+    },
+    {
+      "name": "Uno",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uno",
       "metadata": {
         "return_type": "logic",
         "dependencies": [
@@ -243,323 +1047,77 @@
           }
         ]
       },
-      "path": "~/card"
+      "path": "~/Blocos/CardSetuper/DisplayProcedures"
     },
     {
-      "name": "UserMoney",
-      "type": "overlay",
-      "sortid": 27,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "user_money",
-      "path": "~/card"
-    },
-    {
-      "name": "CardRightClick",
+      "name": "Duo",
       "type": "procedure",
-      "sortid": 28,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "card_right_click",
+      "registry_name": "duo",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ]
-      },
-      "path": "~/card"
-    },
-    {
-      "name": "CardOnPlayerStoppedusing",
-      "type": "procedure",
-      "sortid": 29,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "card_on_player_stoppedusing",
-      "metadata": {
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
           }
         ]
       },
-      "path": "~/card"
+      "path": "~/Blocos/CardSetuper/DisplayProcedures"
     },
     {
-      "name": "CardItemInHandTick",
+      "name": "Tri",
       "type": "procedure",
-      "sortid": 30,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "card_item_in_hand_tick",
+      "registry_name": "tri",
       "metadata": {
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
           }
         ]
       },
-      "path": "~/card"
+      "path": "~/Blocos/CardSetuper/DisplayProcedures"
     },
     {
-      "name": "NewAtmGui",
-      "type": "gui",
-      "sortid": 31,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "new_atm_gui",
-      "path": "~/Blocos/Atm"
-    },
-    {
-      "name": "Check",
+      "name": "Quad",
       "type": "procedure",
-      "sortid": 32,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "check",
+      "registry_name": "quad",
       "metadata": {
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
-      "path": "~/Blocos/Atm"
-    },
-    {
-      "name": "Umfakee",
-      "type": "procedure",
-      "sortid": 33,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "umfakee",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Blocos/Atm/ButtonProcedures"
-    },
-    {
-      "name": "DoisFakee",
-      "type": "procedure",
-      "sortid": 33,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dois_fakee",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Blocos/Atm/ButtonProcedures"
-    },
-    {
-      "name": "CincoFakee",
-      "type": "procedure",
-      "sortid": 33,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cinco_fakee",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Blocos/Atm/ButtonProcedures"
-    },
-    {
-      "name": "DezFakee",
-      "type": "procedure",
-      "sortid": 33,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dez_fakee",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Blocos/Atm/ButtonProcedures"
-    },
-    {
-      "name": "CinquentaFakee",
-      "type": "procedure",
-      "sortid": 34,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cinquenta_fakee",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Blocos/Atm/ButtonProcedures"
-    },
-    {
-      "name": "VinteFakees",
-      "type": "procedure",
-      "sortid": 35,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "vinte_fakees",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Blocos/Atm/ButtonProcedures"
-    },
-    {
-      "name": "Moneyadd",
-      "type": "procedure",
-      "sortid": 36,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "moneyadd",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Blocos/Atm"
+      "path": "~/Blocos/CardSetuper/DisplayProcedures"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "money",
+      "type": "number",
+      "scope": "global",
+      "value": "0.0"
+    },
+    {
+      "name": "online",
+      "type": "logic",
+      "scope": "global",
+      "value": "false"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
@@ -577,6 +1135,7 @@
       "item.money.cinquentafake": "Cinquentafake",
       "item.money.b_fcard": "B Fcard",
       "item.money.moedafake": "Moedafake",
+      "block.money.setadorde_cartao": "Setador de Cartão",
       "item.money.t_xredcard": "T Xredcard"
     }
   },
@@ -589,12 +1148,7 @@
       },
       {
         "name": "card",
-        "children": [
-          {
-            "name": "BlankCard",
-            "children": []
-          }
-        ]
+        "children": []
       },
       {
         "name": "Blocos",
@@ -603,12 +1157,37 @@
             "name": "Atm",
             "children": [
               {
-                "name": "ButtonProcedures",
+                "name": "Senha",
+                "children": []
+              },
+              {
+                "name": "Asteriscos",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "CardSetuper",
+            "children": [
+              {
+                "name": "Cards",
+                "children": []
+              },
+              {
+                "name": "ColocarSenha",
+                "children": []
+              },
+              {
+                "name": "DisplayProcedures",
                 "children": []
               }
             ]
           }
         ]
+      },
+      {
+        "name": "Players",
+        "children": []
       }
     ]
   },

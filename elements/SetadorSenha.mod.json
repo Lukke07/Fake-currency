@@ -1,0 +1,268 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 200,
+    "height": 83,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "1",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Uno"
+          },
+          "name": "1",
+          "x": 141,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Senha",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Senha",
+          "x": 182,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "2",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Duo"
+          },
+          "name": "2",
+          "x": 141,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "3",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Tri"
+          },
+          "name": "3",
+          "x": 141,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "4",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Quad"
+          },
+          "name": "4",
+          "x": 141,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Ns:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Ns:",
+          "x": 132,
+          "y": 89
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "1",
+          "onClick": {
+            "name": "UmS"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "1",
+          "x": 150,
+          "y": 89
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "2",
+          "onClick": {
+            "name": "DoisS"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "2",
+          "x": 180,
+          "y": 89
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "3",
+          "onClick": {
+            "name": "TresS"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "3",
+          "x": 210,
+          "y": 89
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "4",
+          "onClick": {
+            "name": "QuatroS"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "4",
+          "x": 150,
+          "y": 109
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "5",
+          "onClick": {
+            "name": "CincoS"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "5",
+          "x": 180,
+          "y": 109
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "6",
+          "onClick": {
+            "name": "SeisS"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "6",
+          "x": 210,
+          "y": 109
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "7",
+          "onClick": {
+            "name": "SeteS"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "7",
+          "x": 150,
+          "y": 129
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "8",
+          "onClick": {
+            "name": "SOito"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "8",
+          "x": 180,
+          "y": 129
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "9",
+          "onClick": {
+            "name": "NoveS"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "9",
+          "x": 210,
+          "y": 129
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "0",
+          "onClick": {
+            "name": "ZeroS"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "0",
+          "x": 240,
+          "y": 109
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "OK",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Quad"
+          },
+          "name": "OK",
+          "x": 136,
+          "y": 134
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 4,
+      "sy": 4,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
