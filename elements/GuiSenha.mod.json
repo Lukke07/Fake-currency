@@ -11,20 +11,6 @@
     "doesPauseGame": false,
     "components": [
       {
-        "type": "inputslot",
-        "data": {
-          "inputLimit": {
-            "value": ""
-          },
-          "id": 0,
-          "disableStackInteraction": false,
-          "dropItemsWhenNotBound": true,
-          "name": "Slot #0",
-          "x": 133,
-          "y": 80
-        }
-      },
-      {
         "type": "label",
         "data": {
           "text": "ATM",
@@ -276,8 +262,8 @@
             "falpha": 0.0
           },
           "name": "Cartão",
-          "x": 128,
-          "y": 68
+          "x": 134,
+          "y": 91
         }
       },
       {
@@ -293,11 +279,34 @@
           "x": 246,
           "y": 100
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Segure o ",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Segure o ",
+          "x": 131,
+          "y": 81
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Na mão",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Na mão",
+          "x": 133,
+          "y": 103
+        }
       }
     ],
-    "onClosed": {
-      "name": "GuiSenhaThisGUIIsClosed"
-    },
     "gridSettings": {
       "sx": 4,
       "sy": 4,

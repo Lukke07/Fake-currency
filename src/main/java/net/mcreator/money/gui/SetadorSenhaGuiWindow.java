@@ -17,6 +17,7 @@ import net.minecraft.client.Minecraft;
 import net.mcreator.money.procedures.UnoProcedure;
 import net.mcreator.money.procedures.TriProcedure;
 import net.mcreator.money.procedures.QuadProcedure;
+import net.mcreator.money.procedures.OKProcedure;
 import net.mcreator.money.procedures.DuoProcedure;
 import net.mcreator.money.MoneyMod;
 
@@ -97,7 +98,7 @@ public class SetadorSenhaGuiWindow extends ContainerScreen<SetadorSenhaGui.GuiCo
 				(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll)))
 			this.font.drawString(ms, "4", 27, 46, -12829636);
 		this.font.drawString(ms, "Ns:", 18, 10, -12829636);
-		if (QuadProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+		if (OKProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
 				(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll)))
 			this.font.drawString(ms, "OK", 22, 55, -12829636);
 	}
@@ -170,6 +171,12 @@ public class SetadorSenhaGuiWindow extends ContainerScreen<SetadorSenhaGui.GuiCo
 			if (true) {
 				MoneyMod.PACKET_HANDLER.sendToServer(new SetadorSenhaGui.ButtonPressedMessage(9, x, y, z));
 				SetadorSenhaGui.handleButtonAction(entity, 9, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 126, this.guiTop + 50, 30, 20, new StringTextComponent("OK"), e -> {
+			if (true) {
+				MoneyMod.PACKET_HANDLER.sendToServer(new SetadorSenhaGui.ButtonPressedMessage(10, x, y, z));
+				SetadorSenhaGui.handleButtonAction(entity, 10, x, y, z);
 			}
 		}));
 	}

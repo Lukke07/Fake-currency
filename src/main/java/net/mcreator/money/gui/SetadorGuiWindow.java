@@ -14,9 +14,13 @@ import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.money.procedures.PularAppearProcedure;
 import net.mcreator.money.MoneyMod;
 
+import java.util.stream.Stream;
+import java.util.Map;
 import java.util.HashMap;
+import java.util.AbstractMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.matrix.MatrixStack;
@@ -87,7 +91,7 @@ public class SetadorGuiWindow extends ContainerScreen<SetadorGui.GuiContainerMod
 
 	@Override
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
-		this.font.drawString(ms, "Selecione o seu cart\u00E3o", 45, 1, -12829636);
+		this.font.drawString(ms, "Selecione o seu cart\u00E3o", 43, 0, -12829636);
 		this.font.drawString(ms, "BfCard", 108, 51, -12829636);
 	}
 
@@ -126,10 +130,18 @@ public class SetadorGuiWindow extends ContainerScreen<SetadorGui.GuiContainerMod
 			}
 		}));
 		this.addButton(new Button(this.guiLeft + 144, this.guiTop + -18, 51, 20, new StringTextComponent("Pular"), e -> {
-			if (true) {
+			if (PularAppearProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
 				MoneyMod.PACKET_HANDLER.sendToServer(new SetadorGui.ButtonPressedMessage(4, x, y, z));
 				SetadorGui.handleButtonAction(entity, 4, x, y, z);
 			}
-		}));
+		}) {
+			@Override
+			public void render(MatrixStack ms, int gx, int gy, float ticks) {
+				if (PularAppearProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+						(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll)))
+					super.render(ms, gx, gy, ticks);
+			}
+		});
 	}
 }

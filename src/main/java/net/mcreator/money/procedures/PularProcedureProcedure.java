@@ -16,6 +16,10 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.money.item.TXredcardItem;
+import net.mcreator.money.item.TXpinkcardItem;
+import net.mcreator.money.item.TXblackcardItem;
+import net.mcreator.money.item.BFcardItem;
 import net.mcreator.money.gui.SetadorSenhaGui;
 import net.mcreator.money.MoneyMod;
 
@@ -56,10 +60,13 @@ public class PularProcedureProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		Entity entity = (Entity) dependencies.get("entity");
-		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
-				.getBoolean("setado") != true) {
-			if (entity instanceof PlayerEntity)
-				((PlayerEntity) entity).closeScreen();
+		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == BFcardItem.block
+				|| ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
+						.getItem() == TXblackcardItem.block
+				|| ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
+						.getItem() == TXpinkcardItem.block
+				|| ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
+						.getItem() == TXredcardItem.block) {
 			{
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {

@@ -19,8 +19,8 @@
             "falpha": 0.0
           },
           "name": "Selecione o seu cartão",
-          "x": 159,
-          "y": 80
+          "x": 157,
+          "y": 79
         }
       },
       {
@@ -129,6 +129,9 @@
           "onClick": {
             "name": "PularProcedure"
           },
+          "displayCondition": {
+            "name": "PularAppear"
+          },
           "width": 51,
           "height": 20,
           "name": "Pular",
@@ -137,15 +140,12 @@
         }
       }
     ],
-    "onTick": {
-      "name": "SetadorWhileThisGUIIsOpenTick"
-    },
     "gridSettings": {
-      "sx": 9,
-      "sy": 9,
+      "sx": 2,
+      "sy": 2,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }

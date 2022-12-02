@@ -29,6 +29,7 @@ import net.mcreator.money.procedures.SeteSProcedure;
 import net.mcreator.money.procedures.SeisSProcedure;
 import net.mcreator.money.procedures.SOitoProcedure;
 import net.mcreator.money.procedures.QuatroSProcedure;
+import net.mcreator.money.procedures.OkSProcedure;
 import net.mcreator.money.procedures.NoveSProcedure;
 import net.mcreator.money.procedures.DoisSProcedure;
 import net.mcreator.money.procedures.CincoSProcedure;
@@ -244,6 +245,11 @@ public class SetadorSenhaGui extends MoneyModElements.ModElement {
 		if (buttonID == 9) {
 
 			ZeroSProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
+		if (buttonID == 10) {
+
+			OkSProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
 					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 	}

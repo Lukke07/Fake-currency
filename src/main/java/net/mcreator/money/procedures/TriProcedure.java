@@ -18,8 +18,9 @@ public class TriProcedure {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		boolean Valor = false;
-		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY).getOrCreateTag()
-				.getBoolean("s3") == true) {
+		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag().getDouble("3") > -1
+				&& ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
+						.getBoolean("tri") == true) {
 			Valor = (true);
 		} else {
 			Valor = (false);

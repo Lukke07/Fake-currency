@@ -8,19 +8,18 @@ import net.mcreator.money.MoneyMod;
 
 import java.util.Map;
 
-public class QuadProcedure {
+public class OKProcedure {
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				MoneyMod.LOGGER.warn("Failed to load dependency entity for procedure Quad!");
+				MoneyMod.LOGGER.warn("Failed to load dependency entity for procedure OK!");
 			return false;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		boolean Valor = false;
-		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag().getDouble("4") > -1
-				&& ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
-						.getBoolean("quad") == true) {
+		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
+				.getBoolean("ok") == true) {
 			Valor = (true);
 		} else {
 			Valor = (false);

@@ -110,7 +110,9 @@ public class GuiSenhaGuiWindow extends ContainerScreen<GuiSenhaGui.GuiContainerM
 						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll)))
 			this.font.drawString(ms, "*", 44, 13, -12829636);
 		this.font.drawString(ms, "|", 18, 3, -12829636);
-		this.font.drawString(ms, "Cart\u00E3o", 2, 31, -12829636);
+		this.font.drawString(ms, "Cart\u00E3o", 8, 54, -12829636);
+		this.font.drawString(ms, "Segure o ", 5, 44, -12829636);
+		this.font.drawString(ms, "Na m\u00E3o", 7, 66, -12829636);
 	}
 
 	@Override

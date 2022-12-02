@@ -249,11 +249,25 @@
             "falpha": 0.0
           },
           "displayCondition": {
-            "name": "Quad"
+            "name": "OK"
           },
           "name": "OK",
           "x": 136,
           "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "OK",
+          "onClick": {
+            "name": "OkS"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "OK",
+          "x": 240,
+          "y": 129
         }
       }
     ],

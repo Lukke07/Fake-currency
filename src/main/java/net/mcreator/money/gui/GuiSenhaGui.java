@@ -1,7 +1,6 @@
 
 package net.mcreator.money.gui;
 
-import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.CapabilityItemHandler;
@@ -39,7 +38,6 @@ import net.mcreator.money.procedures.SNoveProcedure;
 import net.mcreator.money.procedures.SDoisProcedure;
 import net.mcreator.money.procedures.SCincoProcedure;
 import net.mcreator.money.procedures.OkProcedureProcedure;
-import net.mcreator.money.procedures.GuiSenhaThisGUIIsClosedProcedure;
 import net.mcreator.money.MoneyModElements;
 import net.mcreator.money.MoneyMod;
 
@@ -94,7 +92,7 @@ public class GuiSenhaGui extends MoneyModElements.ModElement {
 			super(containerType, id);
 			this.entity = inv.player;
 			this.world = inv.player.world;
-			this.internal = new ItemStackHandler(1);
+			this.internal = new ItemStackHandler(0);
 			BlockPos pos = null;
 			if (extraData != null) {
 				pos = extraData.readBlockPos();
@@ -132,8 +130,6 @@ public class GuiSenhaGui extends MoneyModElements.ModElement {
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 8, 44) {
-			}));
 			int si;
 			int sj;
 			for (si = 0; si < 3; ++si)
@@ -159,18 +155,18 @@ public class GuiSenhaGui extends MoneyModElements.ModElement {
 			if (slot != null && slot.getHasStack()) {
 				ItemStack itemstack1 = slot.getStack();
 				itemstack = itemstack1.copy();
-				if (index < 1) {
-					if (!this.mergeItemStack(itemstack1, 1, this.inventorySlots.size(), true)) {
+				if (index < 0) {
+					if (!this.mergeItemStack(itemstack1, 0, this.inventorySlots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 					slot.onSlotChange(itemstack1, itemstack);
-				} else if (!this.mergeItemStack(itemstack1, 0, 1, false)) {
-					if (index < 1 + 27) {
-						if (!this.mergeItemStack(itemstack1, 1 + 27, this.inventorySlots.size(), true)) {
+				} else if (!this.mergeItemStack(itemstack1, 0, 0, false)) {
+					if (index < 0 + 27) {
+						if (!this.mergeItemStack(itemstack1, 0 + 27, this.inventorySlots.size(), true)) {
 							return ItemStack.EMPTY;
 						}
 					} else {
-						if (!this.mergeItemStack(itemstack1, 1, 1 + 27, false)) {
+						if (!this.mergeItemStack(itemstack1, 0, 0 + 27, false)) {
 							return ItemStack.EMPTY;
 						}
 					}
@@ -270,11 +266,6 @@ public class GuiSenhaGui extends MoneyModElements.ModElement {
 		@Override
 		public void onContainerClosed(PlayerEntity playerIn) {
 			super.onContainerClosed(playerIn);
-
-			GuiSenhaThisGUIIsClosedProcedure.executeProcedure(Stream
-					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
-							new AbstractMap.SimpleEntry<>("z", z))
-					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			if (!bound && (playerIn instanceof ServerPlayerEntity)) {
 				if (!playerIn.isAlive() || playerIn instanceof ServerPlayerEntity && ((ServerPlayerEntity) playerIn).hasDisconnected()) {
 					for (int j = 0; j < internal.getSlots(); ++j) {

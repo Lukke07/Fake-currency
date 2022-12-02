@@ -18,8 +18,9 @@ public class DuoProcedure {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		boolean Valor = false;
-		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY).getOrCreateTag()
-				.getBoolean("s2") == true) {
+		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag().getDouble("2") > -1
+				&& ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getOrCreateTag()
+						.getBoolean("duo") == true) {
 			Valor = (true);
 		} else {
 			Valor = (false);
