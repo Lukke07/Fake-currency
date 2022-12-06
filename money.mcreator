@@ -1202,6 +1202,42 @@
         ]
       },
       "path": "~/Blocos/CardSetuper/ColocarSenha"
+    },
+    {
+      "name": "CinquentaCubas",
+      "type": "item",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinquenta_cubas",
+      "path": "~/Coins/Cubas"
+    },
+    {
+      "name": "VinteECincoCubas",
+      "type": "item",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vinte_e_cinco_cubas",
+      "path": "~/Coins/Cubas"
+    },
+    {
+      "name": "DezCubas",
+      "type": "item",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dez_cubas",
+      "path": "~/Coins/Cubas"
+    },
+    {
+      "name": "CincoCubas",
+      "type": "item",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinco_cubas",
+      "path": "~/Coins/Cubas"
     }
   ],
   "variable_elements": [
@@ -1224,6 +1260,7 @@
       "item.money.t_xblackcard": "T Xblackcard",
       "item.money.t_xpinkcard": "T Xpinkcard",
       "item.money.doisfake": "Doisfake",
+      "item.money.cinquenta_cubas": "50 Cubas",
       "item.money.dezfake": "Dezfake",
       "block.money.maquina": "Maquina",
       "item.money.cincofake": "Cincofake",
@@ -1231,6 +1268,9 @@
       "itemGroup.tabfake": "Fake",
       "item.money.vintefake": "Vintefake",
       "item.money.blank_card": "Blank Card",
+      "item.money.cinco_cubas": "5 Cubas",
+      "item.money.dez_cubas": "10 Cubas",
+      "item.money.vinte_e_cinco_cubas": "25 Cubas",
       "item.money.umfake": "Umfake",
       "item.money.cinquentafake": "Cinquentafake",
       "item.money.b_fcard": "B Fcard",
@@ -1244,7 +1284,12 @@
     "children": [
       {
         "name": "Coins",
-        "children": []
+        "children": [
+          {
+            "name": "Cubas",
+            "children": []
+          }
+        ]
       },
       {
         "name": "card",
@@ -1294,9 +1339,9 @@
   "workspaceSettings": {
     "modid": "money",
     "modName": "money",
-    "version": "1.0.0",
-    "author": "gedu2, MCreator",
-    "websiteURL": "https://mcreator.net",
+    "version": "1.1.1",
+    "description": "Mod de economida, para o rp de minecraft do Lukke07#2921",
+    "author": "Lukke07, Torpedoplayerr",
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
