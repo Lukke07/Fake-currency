@@ -1,5 +1,6 @@
 {
   "item.money.t_xblackcard": "T Xblackcard",
+  "item.money.um_kwid": "1 Kwid",
   "item.money.t_xpinkcard": "T Xpinkcard",
   "item.money.doisfake": "Doisfake",
   "item.money.cinquenta_cubas": "50 Cubas",
@@ -16,6 +17,7 @@
   "item.money.umfake": "Umfake",
   "item.money.cinquentafake": "Cinquentafake",
   "item.money.b_fcard": "B Fcard",
+  "item.money.carteira": "Carteira",
   "item.money.moedafake": "Moedafake",
   "block.money.setadorde_cartao": "Setador de Cartão",
   "item.money.t_xredcard": "T Xredcard"

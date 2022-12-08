@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "money:cincofake"
+    },
+    {
+      "item": "money:cincofake"
+    },
+    {
+      "item": "money:cincofake"
+    },
+    {
+      "item": "money:cincofake"
+    }
+  ],
+  "result": {
+    "item": "money:vintefake",
+    "count": 1
+  }
+}

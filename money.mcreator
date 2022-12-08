@@ -7,7 +7,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "umfake",
-      "path": "~/Coins"
+      "path": "~/Coins/Fakes"
     },
     {
       "name": "Fake",
@@ -32,7 +32,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "doisfake",
-      "path": "~/Coins"
+      "path": "~/Coins/Fakes"
     },
     {
       "name": "Cincofake",
@@ -41,7 +41,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "cincofake",
-      "path": "~/Coins"
+      "path": "~/Coins/Fakes"
     },
     {
       "name": "Dezfake",
@@ -50,7 +50,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dezfake",
-      "path": "~/Coins"
+      "path": "~/Coins/Fakes"
     },
     {
       "name": "Vintefake",
@@ -59,7 +59,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "vintefake",
-      "path": "~/Coins"
+      "path": "~/Coins/Fakes"
     },
     {
       "name": "Cinquentafake",
@@ -68,7 +68,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "cinquentafake",
-      "path": "~/Coins"
+      "path": "~/Coins/Fakes"
     },
     {
       "name": "MoneyConversion",
@@ -1238,6 +1238,219 @@
       "locked_code": false,
       "registry_name": "cinco_cubas",
       "path": "~/Coins/Cubas"
+    },
+    {
+      "name": "CarteiraGui",
+      "type": "gui",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carteira_gui"
+    },
+    {
+      "name": "Carteira",
+      "type": "item",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carteira"
+    },
+    {
+      "name": "CarteiraRecipe",
+      "type": "recipe",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carteira_recipe"
+    },
+    {
+      "name": "UmKwid",
+      "type": "item",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "um_kwid",
+      "path": "~/Coins/Kwids"
+    },
+    {
+      "name": "Kwid1",
+      "type": "recipe",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kwid_1",
+      "path": "~/Coins/Kwids"
+    },
+    {
+      "name": "Kwid2",
+      "type": "recipe",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kwid_2",
+      "path": "~/Coins/Kwids"
+    },
+    {
+      "name": "Cinquenta",
+      "type": "recipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinquenta",
+      "path": "~/Coins/Fakes"
+    },
+    {
+      "name": "Cinquenta1",
+      "type": "recipe",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinquenta_1",
+      "path": "~/Coins/Fakes"
+    },
+    {
+      "name": "Vinte1",
+      "type": "recipe",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vinte_1",
+      "path": "~/Coins/Fakes"
+    },
+    {
+      "name": "Vinte2",
+      "type": "recipe",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vinte_2",
+      "path": "~/Coins/Fakes"
+    },
+    {
+      "name": "Dez1",
+      "type": "recipe",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dez_1",
+      "path": "~/Coins/Fakes"
+    },
+    {
+      "name": "Dez2",
+      "type": "recipe",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dez_2",
+      "path": "~/Coins/Fakes"
+    },
+    {
+      "name": "Cinco1",
+      "type": "recipe",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinco_1",
+      "path": "~/Coins/Fakes"
+    },
+    {
+      "name": "Dois1",
+      "type": "recipe",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dois_1",
+      "path": "~/Coins/Fakes"
+    },
+    {
+      "name": "Um1",
+      "type": "recipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "um_1",
+      "path": "~/Coins/Fakes"
+    },
+    {
+      "name": "Dois2",
+      "type": "recipe",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dois_2",
+      "path": "~/Coins/Fakes"
+    },
+    {
+      "name": "CinquentaCubas1",
+      "type": "recipe",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinquenta_cubas_1",
+      "path": "~/Coins/Cubas"
+    },
+    {
+      "name": "CinquentaCubas2",
+      "type": "recipe",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinquenta_cubas_2",
+      "path": "~/Coins/Cubas"
+    },
+    {
+      "name": "VinteECincoCubas2",
+      "type": "recipe",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vinte_e_cinco_cubas_2",
+      "path": "~/Coins/Cubas"
+    },
+    {
+      "name": "VinteECincoCubas1",
+      "type": "recipe",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vinte_e_cinco_cubas_1",
+      "path": "~/Coins/Cubas"
+    },
+    {
+      "name": "VinteECincoCubas3",
+      "type": "recipe",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vinte_e_cinco_cubas_3",
+      "path": "~/Coins/Cubas"
+    },
+    {
+      "name": "DezCubas1",
+      "type": "recipe",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dez_cubas_1",
+      "path": "~/Coins/Cubas"
+    },
+    {
+      "name": "DezCubas2",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dez_cubas_2",
+      "path": "~/Coins/Cubas"
+    },
+    {
+      "name": "DezCubas3",
+      "type": "recipe",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dez_cubas_3",
+      "path": "~/Coins/Cubas"
     }
   ],
   "variable_elements": [
@@ -1258,6 +1471,7 @@
   "language_map": {
     "en_us": {
       "item.money.t_xblackcard": "T Xblackcard",
+      "item.money.um_kwid": "1 Kwid",
       "item.money.t_xpinkcard": "T Xpinkcard",
       "item.money.doisfake": "Doisfake",
       "item.money.cinquenta_cubas": "50 Cubas",
@@ -1274,6 +1488,7 @@
       "item.money.umfake": "Umfake",
       "item.money.cinquentafake": "Cinquentafake",
       "item.money.b_fcard": "B Fcard",
+      "item.money.carteira": "Carteira",
       "item.money.moedafake": "Moedafake",
       "block.money.setadorde_cartao": "Setador de Cartão",
       "item.money.t_xredcard": "T Xredcard"
@@ -1287,6 +1502,14 @@
         "children": [
           {
             "name": "Cubas",
+            "children": []
+          },
+          {
+            "name": "Kwids",
+            "children": []
+          },
+          {
+            "name": "Fakes",
             "children": []
           }
         ]

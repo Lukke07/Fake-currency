@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "money:cinquenta_cubas"
+    },
+    {
+      "item": "money:cinquenta_cubas"
+    },
+    {
+      "item": "money:cinquenta_cubas"
+    },
+    {
+      "item": "money:cinquenta_cubas"
+    }
+  ],
+  "result": {
+    "item": "money:doisfake",
+    "count": 1
+  }
+}

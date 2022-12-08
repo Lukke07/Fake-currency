@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "money:dezfake"
+    }
+  ],
+  "result": {
+    "item": "money:cincofake",
+    "count": 2
+  }
+}

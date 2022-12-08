@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "money:dez_cubas"
+    },
+    {
+      "item": "money:dez_cubas"
+    },
+    {
+      "item": "money:cinco_cubas"
+    }
+  ],
+  "result": {
+    "item": "money:vinte_e_cinco_cubas",
+    "count": 1
+  }
+}

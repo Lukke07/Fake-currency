@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "money:doisfake"
+    }
+  ],
+  "result": {
+    "item": "money:umfake",
+    "count": 2
+  }
+}

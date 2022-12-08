@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "money:cinquentafake"
+    },
+    {
+      "item": "money:cinquentafake"
+    },
+    {
+      "item": "money:cinquentafake"
+    }
+  ],
+  "result": {
+    "item": "money:um_kwid",
+    "count": 1
+  }
+}
